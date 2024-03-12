@@ -26,7 +26,7 @@ public abstract class AbstractPizza {
 	public AbstractPizza(double priceWithoutToppings) {
 		toppingList = new ArrayList<>();
         this.priceWithoutToppings = priceWithoutToppings;
-        totalPrice = getTotalPrice();
+        totalPrice = addToppingsToPrice(priceWithoutToppings);
         pizzaOrderID = ++orderIDCounter;
         
         
